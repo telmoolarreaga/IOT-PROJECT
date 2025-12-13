@@ -8,8 +8,8 @@ The goal of the project is to help students easily find available study spaces a
 ## System description
 The system monitors the occupancy of two study desks, each one equipped with three different sensors:
 - **Distance sensor (ultrasonic)**: detects the presence of a person in front of the desk.
-  * Light sensor: detects desk activity such as a laptop screen or desk lamp.
-  * Pressure sensor (button): placed on the chair and activated when someone sits down.
+- **Light sensor**: detects desk activity such as a laptop screen or desk lamp.
+- **Pressure sensor (button)**: placed on the chair and activated when someone sits down.
 
 Sensor data is processed locally on a Raspberry Pi using a simple sensor-fusion logic. If at least two out of three sensors indicate activity, the desk is considered occupied.
 
@@ -19,8 +19,8 @@ The occupancy status is sent using MQTT-compatible cloud infrastructure and stor
 For each desk:
 - Each sensor produces a boolean value (active/inactive).
 - The desk state is calculated as:
-   - occupied = true if at least 2 sensors are active.
-   - occupied = false otherwise.
+   - `occupied = true` if at least 2 sensors are active.
+   - `occupied = false` otherwise.
 
 This approach increases reliability compared to using a single sensor and helps reduce false positives and negatives.
 
@@ -30,19 +30,19 @@ This approach increases reliability compared to using a single sensor and helps 
    - Grove ultrasonic distance sensor
    - Grove button (pressure sensor)
 
-- **Edge processing
+- **Edge processing**
    - Raspberry Pi
    - Python script with multithreading (one thread per desk)
 
-- **Data and communication layer
+- **Data and communication layer**
    - InfluxDB Cloud (time-series database)
    - MQTT-based data publishing (via InfluxDB client)
 
-- **Application layer
+- **Application layer**
    - Grafana dashboard
    - Real-time desk occupancy visualization
 
-Data flow
+### Data flow
     Sensor --> Raspberry Pi (local logic) --> InfluxDB cloud --> Grafana dashboard
 
 ## Technologies used
@@ -57,13 +57,13 @@ Data flow
 
 ## How to run the project
 ### Requirements
-* Raspberry Pi with Raspberry Pi OS
-* Grove Base Hat
+- Raspberry Pi with Raspberry Pi OS
+- Grove Base Hat
 - Sensors:
    - 2 x Grove light sensors (A0, A2)
    - 2 x Grove ultrasonic sensors (D16, D18)
    - 2 x Grove buttons (D24, D26)
-* Python 3
+- Python 3
 
 ### Python dependencies 
 Install required libraries:
