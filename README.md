@@ -97,4 +97,4 @@ The Grafana dashboard displays:
 This project represents a functional MVP (Minimum Viable Product) developed for academic purposes.
 
 ## Authors
-Natalia, Naroa and Telmo
+Natalia González, Naroa  Manterola and Telmo Olarreaga
