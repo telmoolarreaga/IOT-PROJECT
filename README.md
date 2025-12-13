@@ -1,1 +1,3 @@
-# IOT-PROJECT
+# Smart study spot
+
+## Project overview
