@@ -20,9 +20,9 @@ For each desk:
 * Each sensor produces a boolean value (active/inactive).
 * The desk state is calculated as:
 
-      - occupied = true if at least 2 sensors are active.
+      · occupied = true if at least 2 sensors are active.
   
-      - occupied = false otherwise.
+      · occupied = false otherwise.
 
 This approach increases reliability compared to using a single sensor and helps reduce false positives and negatives.
 
