@@ -26,9 +26,9 @@ This approach increases reliability compared to using a single sensor and helps 
 
 ## System architecture
 Sensing layer
-    * Grove light sensor
-    * Grove ultrasonic distance sensor
-    * Grove button (pressure sensor)
+   - Grove light sensor
+   - Grove ultrasonic distance sensor
+   - Grove button (pressure sensor)
 
 Edge processing
     * Raspberry Pi
