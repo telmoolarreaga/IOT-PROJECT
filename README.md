@@ -31,16 +31,16 @@ Sensing layer
    - Grove button (pressure sensor)
 
 Edge processing
-    * Raspberry Pi
-    * Python script with multithreading (one thread per desk)
+   - Raspberry Pi
+   - Python script with multithreading (one thread per desk)
 
 Data and communication layer
-    * InfluxDB Cloud (tme-series database)
-    * MQTT-based data publishing (via InfluxDB client)
+   - InfluxDB Cloud (tme-series database)
+   - MQTT-based data publishing (via InfluxDB client)
 
 Application layer
-    * Grafana dashboard
-    * Real-time desk occupancy visualization
+   - Grafana dashboard
+   - Real-time desk occupancy visualization
 
 Data flow
     Sensor --> Raspberry Pi (local logic) --> InfluxDB cloud --> Grafana dashboard
