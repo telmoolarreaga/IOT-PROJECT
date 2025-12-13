@@ -7,7 +7,7 @@ The goal of the project is to help students easily find available study spaces a
 
 ## System description
 The system monitors the occupancy of two study desks, each one equipped with three different sensors:
-  * Distance sensor (ultrasonic): detects the presence of a person in front of the desk.
+- **Distance sensor (ultrasonic)**: detects the presence of a person in front of the desk.
   * Light sensor: detects desk activity such as a laptop screen or desk lamp.
   * Pressure sensor (button): placed on the chair and activated when someone sits down.
 
@@ -25,20 +25,20 @@ For each desk:
 This approach increases reliability compared to using a single sensor and helps reduce false positives and negatives.
 
 ## System architecture
-Sensing layer
+- **Sensing layer**
    - Grove light sensor
    - Grove ultrasonic distance sensor
    - Grove button (pressure sensor)
 
-Edge processing
+- **Edge processing
    - Raspberry Pi
    - Python script with multithreading (one thread per desk)
 
-Data and communication layer
-   - InfluxDB Cloud (tme-series database)
+- **Data and communication layer
+   - InfluxDB Cloud (time-series database)
    - MQTT-based data publishing (via InfluxDB client)
 
-Application layer
+- **Application layer
    - Grafana dashboard
    - Real-time desk occupancy visualization
 
@@ -58,7 +58,7 @@ Data flow
 ## How to run the project
 ### Requirements
 * Raspberry Pi with Raspberry Pi OS
-* Grove base hat
+* Grove Base Hat
 - Sensors:
    - 2 x Grove light sensors (A0, A2)
    - 2 x Grove ultrasonic sensors (D16, D18)
@@ -98,10 +98,3 @@ This project represents a functional MVP (Minimum Viable Product) developed for 
 
 ## Authors
 Natalia, Naroa and Telmo
-
-
-
-
-
-
-
