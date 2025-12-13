@@ -3,11 +3,11 @@
 ## Project overview
 Smart Study Spot is an Internet of Things (IoT) project developed to monitor and visualize the real-time occupancy of shared study desks on campus. The system uses multiple low-cost sensors connected to a Raspberry Pi to determine whether a desk is occupied and publishes this information to a cloud platform for visualization.
 
-The goal of the project is to help students easily find available study spaces and to provide administratos with data about space usage. This projectt was developed as part of the Internet of Things Application Development course in the Bachelor's Degree program at the University of Deusto.
+The goal of the project is to help students easily find available study spaces and to provide administrators with data about space usage. This project was developed as part of the Internet of Things Application Development course in the Bachelor's Degree program at the University of Deusto.
 
 ## System description
 The system monitors the occupancy of two study desks, each one equipped with three different sensors:
-  * Distance sensor (ultrasonic): detects the presence os a person in front of the desk.
+  * Distance sensor (ultrasonic): detects the presence of a person in front of the desk.
   * Light sensor: detects desk activity such as a laptop screen or desk lamp.
   * Pressure sensor (button): placed on the chair and activated when someone sits down.
 
@@ -59,9 +59,10 @@ Data flow
 ### Requirements
 * Raspberry Pi with Raspberry Pi OS
 * Grove base hat
-* Grove light sensors
-* Grove ultrasonic sensors
-* Grove buttons
+- Sensors:
+   - 2 x Grove light sensors (A0, A2)
+   - 2 x Grove ultrasonic sensors (D16, D18)
+   - 2 x Grove buttons (D24, D26)
 * Python 3
 
 ### Python dependencies 
