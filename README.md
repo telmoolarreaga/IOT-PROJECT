@@ -81,7 +81,9 @@ Install required libraries:
 
 ### Execution
 Run the script:
+
 `python hilo.py`
+
 The script continuously reads sensor data every second and updates the occupancy state for each desk.
 
 ## Dashboard
