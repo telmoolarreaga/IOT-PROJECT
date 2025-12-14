@@ -31,9 +31,9 @@ The occupancy status is sent using MQTT-compatible cloud infrastructure and stor
 - Raspberry Pi with Raspberry Pi OS
 - Grove Base Hat
 - Sensors:
-   - 2 x Grove light sensors (A0, A2)
-   - 2 x Grove ultrasonic sensors (D16, D18)
-   - 2 x Grove buttons (D24, D26)
+   - 2 x Grove light sensors
+   - 2 x Grove ultrasonic sensors
+   - 2 x Grove buttons
 - Python 3
 
 ### Python dependencies 
